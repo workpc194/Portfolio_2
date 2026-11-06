@@ -1,0 +1,460 @@
+@import "tailwindcss";
+
+/* Custom Fonts */
+@font-face {
+  font-family: ibmPlex;
+  src: url('./assets/fonts/ibm-plex-sans.regular.ttf');
+}
+
+@font-face {
+  font-family: jetBrains;
+  src: url('./assets/fonts/jetbrains-mono.regular.ttf');
+}
+
+@theme {
+  --font-ibmPlex: ibmPlex;
+  --font-jetBrains: jetBrains;
+}
+
+/* Boiler Plate */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+/* Selected Text and BG color Change */
+::selection {
+  background-color: #7EE787;
+  color: #0E1116;
+}
+
+::-moz-selection {
+  background-color: #7EE787;
+  color: #0E1116;
+}
+
+nav {
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* Media Query for lessthan 1024px (Small Laptops) */
+@media screen and (max-width: 1024px) {
+
+  /* Navbar */
+  nav {
+    height: 57px;
+    padding-inline: 32px;
+  }
+
+  /* Hero */
+  #hero {
+    padding-inline: 32px;
+  }
+
+  #heroLeft h5 {
+    font-size: 14px;
+  }
+
+  #heroLeft h1 {
+    font-size: 56px;
+    padding-top: 22px;
+  }
+
+  #heroLeft p {
+    font-size: 20px;
+    padding-top: 22px;
+  }
+
+  #heroBtns {
+    margin-top: 28px;
+    gap: 14px;
+  }
+
+  #heroCrad p {
+    font-size: 14px;
+  }
+
+  /* Github Data Section */
+  #githubData {
+    padding-inline: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #githubDataCard h3 {
+    font-size: 40px;
+  }
+
+  /* Skills Section */
+  #skills {
+    padding-inline: 32px;
+  }
+
+  #skills h2,
+  #journey h2 {
+    font-size: 40px;
+  }
+
+  /* Projects Section */
+  #projects {
+    padding-inline: 32px;
+  }
+
+  #projects h2 {
+    font-size: 40px;
+  }
+
+  /* Journey section */
+  #journey {
+    padding-inline: 32px;
+    margin-top: 80px;
+  }
+
+  #journeyCard> :first-child,
+  #journeyCard> :nth-child(2) div {
+    margin-top: 32px;
+  }
+
+  /* Contact */
+  #contact {
+    padding-inline: 32px;
+    gap: 48px;
+    padding-top: 96px;
+  }
+
+  #contact h2 {
+    font-size: 44px;
+    line-height: 47px;
+  }
+
+  #contact> :nth-child(2) {
+    font-size: 18px;
+  }
+
+  #contactCard {
+    padding-block: 20px;
+    padding-inline: 22px;
+  }
+
+  #contactCard div {
+    gap: 18px;
+  }
+
+  #contactCard div> :nth-child(2)> :nth-child(2) {
+    font-size: 17px;
+  }
+
+  /* Footer */
+  #footer {
+    padding-inline: 32px;
+  }
+}
+
+/* Media Query for lessthan 768px (Tablets) */
+@media screen and (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    height: 53px;
+  }
+
+  /* Hero Section */
+  #heroLeft h1,
+  #heroLeft p {
+    padding-top: 20px;
+  }
+
+  #heroBtns {
+    margin-top: 26px;
+    width: 100%;
+  }
+
+  #heroCrad p {
+    font-size: 15px;
+  }
+
+  /* Github Data Section */
+  #githubData {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  /* Skills Data Section */
+  #skills-div1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  #skills h2,
+  #journey h2,
+  #projects h2 {
+    font-size: 36px;
+  }
+
+  /* Journey */
+  #journey {
+    margin-top: 72px;
+  }
+
+  #journeyCard> :first-child,
+  #journeyCard> :nth-child(2) div {
+    margin-top: 30px;
+  }
+
+  /* Contact */
+  #contact {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 80px;
+  }
+
+  #contact h2 {
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  #contactCard {
+    padding-inline: 20px;
+  }
+
+  #contactCard div {
+    gap: 16px;
+  }
+
+  #contactCard div> :nth-child(2)> :nth-child(2) {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  #footer> :first-child {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+
+/* Media Query For lessthan 450px (Mobiles) */
+@media screen and (max-width: 450px) {
+
+  /* Navbar */
+  nav {
+    padding-inline: 20px;
+  }
+
+  /* Hero */
+  #hero {
+    gap: 32px;
+    padding-inline: 20px;
+  }
+
+  #heroLeft h5 {
+    font-size: 13px;
+  }
+
+  #heroLeft h1 {
+    font-size: 42px;
+    line-height: 44px;
+    padding-top: 18px;
+  }
+
+  #heroLeft p {
+    font-size: 17px;
+    line-height: 26px;
+    padding-top: 18px;
+  }
+
+  #heroBtns {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  #heroBtns a {
+    width: 100%;
+    text-align: center;
+    padding-block: 16px;
+  }
+
+  #heroCard p {
+    font-size: 12px;
+  }
+
+  #herocard div:nth-child(1) span {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* GithubData Section */
+  #githubData {
+    padding-inline: 20px;
+    gap: 12px;
+  }
+
+  #githubDataCard h3 {
+    font-size: 34px;
+  }
+
+  /* Skills Section */
+  #skills {
+    padding-inline: 20px;
+  }
+
+  #skills p,
+  #journeyP1 {
+    font-size: 13px;
+  }
+
+  #skills h2,
+  #journey h2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  /* Projects Section */
+  #projects {
+    padding-inline: 20px;
+  }
+
+  #projects> :first-child {
+    font-size: 13px;
+  }
+
+  #projects> :nth-child(2) {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  #projects> :nth-child(4) {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /* Journey Section */
+  #journey {
+    padding-inline: 20px;
+    margin-top: 56px;
+  }
+
+  #journeyP1 {
+    font-size: 13px;
+  }
+
+  #journeyCard> :first-child,
+  #journeyCard> :nth-child(2) div {
+    margin-top: 26px;
+  }
+
+  #journeyCard h5 {
+    font-size: 12px;
+  }
+
+  #journeyCard h4 {
+    font-size: 18px;
+  }
+
+  #journeyCard p {
+    font-size: 15px;
+  }
+
+  /* Contact */
+  #contact {
+    padding-inline: 20px;
+    gap: 36px;
+    padding-top: 60px;
+  }
+
+  #contact> :first-child {
+    font-size: 13px;
+  }
+
+  #contact h2 {
+    font-size: 34px;
+    line-height: 37px;
+  }
+
+  #contact> :nth-child(3) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #contactCard {
+    padding-inline: 12px;
+    padding-block: 12px;
+  }
+
+  #contactCard div {
+    gap: 10px;
+  }
+
+  #contactCard div :first-child {
+    width: 44px;
+    height: 44px;
+  }
+
+  #contactCard div> :nth-child(2)> :first-child {
+    font-size: 12px;
+  }
+
+  #contactCard div> :nth-child(2)> :nth-child(2) {
+    font-size: 15px;
+  }
+
+  /* Footer */
+  #footer {
+    padding-inline: 20px;
+  }
+
+  #footer> :first-child> :nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* #footer> :first-child> :nth-child(2)> :nth-child(3) {
+    grid-column: span 2 / span 2;
+  } */
+}
+
+@media screen and (max-width: 500px) {
+  #footer> :nth-child(2) {
+    flex-direction: column;
+  }
+}
+
+/* Media Query for less than 650px */
+@media screen and (max-width: 650px) {
+
+  /* Navbar */
+  nav {
+    height: 72px;
+  }
+
+  nav h1 {
+    font-size: 15px;
+  }
+
+  #navFirstUl {
+    display: none;
+  }
+
+  nav #navMenuRef {
+    display: flex;
+  }
+}
+
+/* Media Query for Hero Section */
+@media screen and (max-width: 850px) {
+  #hero {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #heroCard {
+    margin-top: 0;
+  }
+}
