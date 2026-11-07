@@ -118,25 +118,25 @@ export const dataSlice = createSlice({
         learningData: [
             {
                 id: 0,
-                name: '01 . foundations',
+                name: '01 • foundations',
                 heading: 'HTML, CSS and JavaScript foundamentals',
                 paragraph: 'Finished JavaScript, then shipped currency-converter and rock-paper-scissors.'
             },
             {
                 id: 1,
-                name: '02 . react',
+                name: '02 • react',
                 heading: 'Components, state, routing, Context and APIs',
                 paragraph: 'Eight mini-projects in react-learning, then the movies-project.'
             },
             {
                 id: 2,
-                name: '03 . state and styling',
+                name: '03 • state and styling',
                 heading: 'Redux Toolkit and Tailwind CSS',
                 paragraph: 'Global state with Redux, utility-first styling across my React apps.'
             },
             {
                 id: 3,
-                name: '04 . motion',
+                name: '04 • motion',
                 heading: 'GSAP, ScrollTrigger and SVG animation',
                 paragraph: 'Timelines, scroll effects, a custom cursor and an animated navbar.'
             },

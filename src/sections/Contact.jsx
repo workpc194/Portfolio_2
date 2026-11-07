@@ -37,7 +37,7 @@ const Contact = () => {
         <div className='border-y border-[#3A4552] mt-9'>
           <div className='flex py-4.5 items-center gap-6'>
             <span className='w-24 font-jetBrains font-medium text-sm text-[#9AA6B2]'>location</span>
-            <span className='font-jetBrains font-medium text-sm text-[#E6EDF3]'>Pakistan . {pakistanTime}</span>
+            <span className='font-jetBrains font-medium text-sm text-[#E6EDF3]'>Pakistan • {pakistanTime}</span>
           </div>
           <div className='flex py-4.5 items-center gap-6 border-t border-[#3A4552]'>
             <span className='w-24 font-jetBrains font-medium text-sm text-[#9AA6B2]'>status</span>

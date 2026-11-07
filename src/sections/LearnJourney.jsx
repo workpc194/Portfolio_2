@@ -22,7 +22,7 @@ const LearnJourney = () => {
             )
           })}
           <div className='mt-9'>
-            <h5 className='font-jetBrains font-bold text-sm text-[#FFD866]'>next . in progress</h5>
+            <h5 className='font-jetBrains font-bold text-sm text-[#FFD866]'>next • in progress</h5>
             <h4 className='font-ibmPlex mt-2 font-medium text-xl text-[#E6EDF3] tracking-normal leading-7'>Next.js, then System Design</h4>
             <p className='font-ibmPlex mt-1.5 mb-8 text-base text-[#B6B0CA] leading-7 tracking-normal'>Moving from React to Next.js, and looking for help learning System design.</p>
           </div>
