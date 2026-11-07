@@ -1,15 +1,27 @@
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+import { useEffect } from 'react';
 
-const LenisFile = () => {
-    const lenis = new Lenis();
+gsap.registerPlugin(ScrollTrigger);
 
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
+function LenisFile({ children }) {
+  
+    useEffect(() => {
+        const lenis = new Lenis({
+            lerp: 0.1,
+            smoothWheel: true,
+        });
 
-    requestAnimationFrame(raf);
-    return;
+        lenis.on('scroll', ScrollTrigger.update);
+
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
+
+        gsap.ticker.lagSmoothing(0);
+    }, [])
+    return children
 }
 
 export default LenisFile

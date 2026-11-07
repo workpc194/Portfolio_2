@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const SkillCard = (item) => {
   return (
-    <div id='skillCard' className='p-6 bg-[#151A21] rounded-xl border border-[#252C36] hover:border-[#7EE787]'>
+    <div id='skillCard' className='p-6 bg-[#151A21] rounded-xl border border-[#252C36]'>
       <h3 className='font-jetBrains font-bold text-sm text-[#9AA6B2]'>{item.elem.name}</h3>
       <div className='w-full flex flex-wrap gap-2 pt-4'>
         {item.elem.skill.map((items, idx) => {

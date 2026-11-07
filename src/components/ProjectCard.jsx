@@ -37,7 +37,7 @@ const ProjectCard = (item) => {
         </div>
         <h3 className="font-ibmPlex font-semibold text-2xl leading-7.5 tracking-[0.01em] text-[#E6EDF3] mt-2">{item.elem.name}</h3>
         <p className="font-ibmPlex text-base leading-6 text-[#B6B0CA] mt-2.5">{item.elem.description}</p>
-        <a className="py-3 w-19 bg-[#7EE787] font-jetBrains font-bold text-sm text-[#0E1116] rounded-lg mt-4" href={item.elem.source}>Source</a>
+        <a className="py-3 w-19 bg-[#7EE787] font-jetBrains font-bold text-sm text-[#0E1116] rounded-lg mt-4" href={item.elem.source} target="_blank">Source</a>
       </div>
     </article>
   )

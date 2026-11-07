@@ -19,17 +19,17 @@ const Footer = () => {
           </div>
           <div className='flex flex-col'>
             <h3 className='font-jetBrains font-bold text-[13px] text-[#9AA6B2] tracking-[0.08em] uppercase'>projects</h3>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://movies-project-eight-beta.vercel.app/">Movies Project</a>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://notes-app-by-noman.vercel.app/">Notes App</a>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://gallery-app-by-noman.vercel.app/">Infinite Gallery</a>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://github.com/workpc194/gsap-learn">GSAP Studies</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://movies-project-eight-beta.vercel.app/" target="_blank">Movies Project</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://notes-app-by-noman.vercel.app/" target="_blank">Notes App</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://gallery-app-by-noman.vercel.app/" target="_blank">Infinite Gallery</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://github.com/workpc194/gsap-learn" target="_blank">GSAP Studies</a>
           </div>
           <div className='flex flex-col'>
             <h3 className='font-jetBrains font-bold text-[13px] text-[#9AA6B2] tracking-[0.08em] uppercase'>connect</h3>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://github.com/workpc194">GitHub</a>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="mailto:nomitool1419@gmail.com">Email</a>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://wa.me/923183815505">WhatsApp</a>
-            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://www.linkedin.com/">Linkedin</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://github.com/workpc194" target="_blank">GitHub</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="mailto:nomitool1419@gmail.com" target="_blank">Email</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://wa.me/923183815505" target="_blank">WhatsApp</a>
+            <a className='font-ibmPlex font-medium text-[15px] text-[#E6EDF3] mt-3.5 hover:text-[#7EE787]' href="https://www.linkedin.com/" target="_blank">Linkedin</a>
           </div>
         </div>
       </div>

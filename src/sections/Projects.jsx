@@ -16,8 +16,8 @@ const Projects = () => {
                 })}
             </div>
             <div className='w-full px-7 py-9 flex items-center justify-between mt-14 border border-dashed border-[#3A4552] rounded-2xl'>
-                <p className='font-ibmPlex font-medium text-lg text-B6B0CA]'>Every project here is open source on GitHub</p>
-                <a className='text-[#7EE787] border border-[#7EE787] py-3.5 px-5 font-jetBrains font-bold rounded-lg' href="https://github.com/workpc194">more on github</a>
+                <p className='font-ibmPlex font-medium text-lg text-[#B6B0CA]'>Every project here is open source on GitHub</p>
+                <a className='text-[#7EE787] border border-[#7EE787] py-3.5 px-5 font-jetBrains font-bold rounded-lg' href="https://github.com/workpc194" target='_blank'>more on github</a>
             </div>
         </section>
     )

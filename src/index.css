@@ -333,6 +333,7 @@ nav {
   #projects> :nth-child(4) {
     flex-direction: column;
     align-items: start;
+    padding-block: 25px;
   }
 
   /* Journey Section */
@@ -384,25 +385,19 @@ nav {
   }
 
   #contactCard {
-    padding-inline: 12px;
-    padding-block: 12px;
+    padding: 12px;
   }
 
   #contactCard div {
     gap: 10px;
   }
 
-  #contactCard div :first-child {
-    width: 44px;
-    height: 44px;
-  }
-
-  #contactCard div> :nth-child(2)> :first-child {
+  #contactCard div > div:nth-child(2) > span:first-child {
     font-size: 12px;
   }
 
   #contactCard div> :nth-child(2)> :nth-child(2) {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   /* Footer */
